@@ -3,45 +3,70 @@
 This project performs a detailed **Vendor Performance Analysis** by consolidating multiple SQL data sources, analyzing performance metrics, and visualizing key business insights in Power BI. The objective is to help decision-makers identify underperforming vendors, optimize procurement strategies, and enhance vendor management.
 
 
-## 📌 Objective
+## 📌  Objective
+Designed and developed a complete data analytics solution to assess vendor performance by automating the extraction, processing, and visualization of multi-source transactional data. The project aims to support procurement teams in identifying underperforming vendors, optimizing pricing and promotional strategies, and improving inventory and supplier management.
 
-To automate and streamline the process of analyzing vendor data by:
-- Extracting and merging data from multiple relational tables
-- Performing exploratory data analysis (EDA)
-- Classifying vendors based on defined business logic
-- Creating a visual Power BI dashboard for quick decision-making
+🛠️ Tools & Technologies
+Python 3.x – Data processing and automation
 
-  ## 🛠️ Tools & Technologies
+Pandas – Data manipulation and feature engineering
 
-- **Python 3.x** – Data wrangling & transformation  
-- **Pandas** – Data manipulation  
-- **SQLite3** – Querying relational data  
-- **Power BI** – Interactive data visualization  
-- **Matplotlib / Seaborn** – Optional EDA plotting (if used)  
-- **Logging** – For debugging and traceability
+SQLite3 – SQL querying of structured relational data
 
-  ## 🧩 Project Workflow
+Power BI – Interactive and dynamic business intelligence dashboards
 
-### 1. 🧠 Data Ingestion & Transformation (Script: `get_vendor_summary.py`)
+Matplotlib / Seaborn – Optional visual exploration during EDA
 
-### 2. 📊 Exploratory Data Analysis (EDA)
+Logging – Error handling and process traceability
 
-Performed initial EDA using Python:
-- Checked for null values, outliers, and duplicates
-- Grouped vendors by category and calculated metrics
-- Used summary statistics to understand data distribution
-- Optional visualizations: Bar charts, box plots, etc.
+📂 Project Workflow
+1. 🔄 Data Ingestion & Transformation
+Developed Python script (get_vendor_summary.py) to connect to multiple relational tables.
 
-### 3. 📈 Vendor Performance Analysis
-It answers following business questions:
-- Identifying Brands that needs Promotional or Pricing Adjustments which exhibit lower sales performance but higher profit margins.
-- Which vendors and brands demonstrate the highest sales performance?
-- Which vendors contribute the most to toal purchase dollars?
-- How much of total procurement is dependent on the top vendors?
-- Does purchasing in bulk reduce the unit price, and what is the optimal purchase volume for cost savings?
-- How much capital is locked in unsold inventory per vendor and which vendors contribute the most to it?
+Consolidated product, purchase, sales, and vendor master data into a unified analysis-ready dataset.
 
-  ### 4. 📉 Power BI Dashboard
+Handled missing values, ensured schema consistency, and applied business-specific transformations.
+
+2. 📊 Exploratory Data Analysis (EDA)
+Conducted preliminary analysis to detect null values, duplicates, and outliers.
+
+Grouped vendors and brands by performance KPIs such as sales volume, profit margins, and inventory movement.
+
+Generated summary statistics and category-level trends to support modeling and business decisions.
+
+3. 📈 Vendor Performance Evaluation
+Key business questions addressed:
+
+Which vendors and brands exhibit strong sales performance and profitability?
+
+Which suppliers contribute the highest to total procurement value?
+
+How dependent is the business on top-tier vendors?
+
+Are there vendors locking up capital in slow-moving or unsold inventory?
+
+Can bulk purchasing reduce unit costs and what is the optimal purchase volume for savings?
+
+Which vendors require price or promotional adjustments to optimize performance?
+
+📊 Power BI Dashboard Highlights
+KPI cards displaying total procurement, vendor count, and unsold inventory.
+
+Bar and line charts visualizing vendor contribution, unit pricing trends, and profit margins.
+
+Slicers to filter insights by brand, category, or vendor segment.
+
+Drill-down reports to identify high-performing and low-performing vendors at a glance.
+
+✅ Impact & Takeaways
+Delivered a reusable, scalable, and automation-ready analytics pipeline.
+
+Enabled data-driven decision-making in procurement and vendor selection.
+
+Enhanced visibility into operational bottlenecks such as cost inefficiencies and inventory lock-up.
+
+Demonstrated proficiency across the full data workflow: SQL querying → Python transformation → BI reporting.
+
 
 ![image](https://github.com/user-attachments/assets/07a32b68-783a-4a5a-abd8-19811b13974a)
 
